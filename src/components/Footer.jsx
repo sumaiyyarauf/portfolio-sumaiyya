@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="container-section">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold mb-2">John Doe</h3>
+            <h3 className="text-2xl font-bold mb-2">Sumaiyya Abdul Rauf</h3>
             <p className="text-dark-300 max-w-xs">
               Frontend Developer crafting beautiful and functional user interfaces for the web.
             </p>
