@@ -101,7 +101,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-dark-700 flex flex-col md:flex-row justify-between items-center">
           <p className="text-dark-400 text-sm">
-            © {new Date().getFullYear()} John Doe. All rights reserved.
+            © {new Date().getFullYear()} Sumaiyya Abdul Rauf. All rights reserved.
           </p>
 
           <button
