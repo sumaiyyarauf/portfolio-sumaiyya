@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" py-12 px-4 md:px-10">
+    <footer className=" py-12 px-4 md:px-10 bg-black text-white">
       <div className="container-section">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-8 md:mb-0">
