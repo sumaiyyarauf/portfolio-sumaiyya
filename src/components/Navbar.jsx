@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { ThemeContext } from '../Context/ThemeContext';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -10,6 +11,20 @@ const navLinks = [
   { name: 'Contact', href: '#contact' },
 ];
 
+const menuVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const linkVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -18,18 +33,12 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-
+      setScrolled(window.scrollY > 50);
       const sections = document.querySelectorAll('section[id]');
       sections.forEach((section) => {
         const sectionTop = section.offsetTop - 100;
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id') || '';
-
         if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
           setActiveSection(sectionId);
         }
@@ -112,26 +121,41 @@ const Navbar = () => {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-dark-800 shadow-lg">
-          <nav className="flex flex-col px-4 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={closeMenu}
-                className={`font-medium px-4 py-2 rounded-lg transition-colors ${
-                  activeSection === link.href.substring(1)
-                    ? 'text-primary-500 bg-primary-50 dark:bg-dark-700'
-                    : 'text-dark-600 dark:text-dark-300 hover:bg-dark-100 dark:hover:bg-dark-700'
-                }`}
-              >
-                {link.name}
-              </a>
-            ))}
-          </nav>
-        </div>
-      )}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            className="md:hidden bg-white dark:bg-dark-800 shadow-lg"
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={menuVariants}
+          >
+            <motion.nav
+              className="flex flex-col px-4 py-4 space-y-4"
+              variants={menuVariants}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+            >
+              {navLinks.map((link) => (
+                <motion.a
+                  key={link.name}
+                  href={link.href}
+                  onClick={closeMenu}
+                  className={`font-medium px-4 py-2 rounded-lg transition-colors ${
+                    activeSection === link.href.substring(1)
+                      ? 'text-primary-500 bg-primary-50 dark:bg-dark-700'
+                      : 'text-dark-600 dark:text-dark-300 hover:bg-dark-100 dark:hover:bg-dark-700'
+                  }`}
+                  variants={linkVariants}
+                >
+                  {link.name}
+                </motion.a>
+              ))}
+            </motion.nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
