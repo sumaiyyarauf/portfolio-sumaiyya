@@ -75,7 +75,7 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-white text-black font-semibold rounded hover:bg-gray-200 transition"
+                className="px-4 py-2 bg-white sm:w-full md:w-auto text-black font-semibold rounded hover:bg-gray-200 transition"
               >
                 View Project
               </a>
