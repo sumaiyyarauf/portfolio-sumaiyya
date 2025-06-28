@@ -24,7 +24,6 @@ const About = () => {
       className="relative bg-black text-white py-24 px-6 md:px-20 overflow-hidden"
     >
 
-      {/* Image Banner */}
       <div className="flex justify-center mb-10">
         <div className="w-full md:w-2/3 h-56 overflow-hidden rounded-lg">
           <img
@@ -35,20 +34,23 @@ const About = () => {
         </div>
       </div>
 
-      {/* INTRODUCTION */}
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-5xl font-extrabold text-[#F4EBD0] mb-6 tracking-tight">
           INTRODUCTION
         </h2>
-        <p className="text-gray-300 mb-12 leading-relaxed">
-          I'm a passionate Frontend Developer with a keen eye for creating engaging and responsive user interfaces. I specialize in building modern web applications using React.js and related technologies.
+       <p className="text-gray-300 mb-12 leading-relaxed">
+          I'm a passionate Frontend Developer with a strong focus on building responsive and user-friendly interfaces using React.js and modern web technologies.
           <br />
           <br />
-          My journey in web development began during college, where I discovered my passion for creating interactive user experiences. Since then, I've worked on various projects ranging from small business websites to complex web applications.
+            After completing my graduation, I pursued a Web Development course where I gained hands-on experience in frontend technologies. I then completed an internship as a React Developer, which helped me sharpen my skills in building dynamic and scalable web applications.
           <br />
           <br />
-          When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying outdoor activities to maintain a healthy work-life balance.
+            Currently, I'm exploring full-stack development and interning as a Full Stack Developer at Code Linear. This journey has broadened my understanding of backend technologies and how they integrate with frontend systems.
+          <br />
+          <br />
+            Outside of development, I enjoy exploring new tools, learning emerging technologies, and maintaining a balanced lifestyle through outdoor activities.
         </p>
+
 
         <a
           href="#contact"
@@ -58,7 +60,6 @@ const About = () => {
         </a>
       </div>
 
-      {/* MY SKILLS SECTION */}
       <div className="mt-24 max-w-4xl mx-auto">
         <h3 className="text-3xl font-semibold text-white mb-10 text-center">
           My Skills
@@ -84,11 +85,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <div className="mt-20 flex justify-between items-center text-sm text-gray-500 px-2">
-        <span>Sumaiyya Abdul Rauf</span>
-        <span>www.sumaiyya.dev</span>
-      </div>
     </section>
   );
 };

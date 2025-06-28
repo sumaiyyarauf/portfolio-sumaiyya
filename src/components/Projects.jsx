@@ -10,47 +10,48 @@ import Project6 from "../assets/project6.png"
 const projects = [
   {
     id: 1,
-    title: "Business Card Design",
-    description: "Clean and minimal business cards with sharp edges.",
+    title: "Figma to Code",
+    description: "Converted Figma design to responsive HTML, CSS, and JavaScript website.",
     image: Project1,
     link: "https://day1-steel-five.vercel.app/",
   },
   {
     id: 2,
-    title: "Box Packaging",
-    description: "Elegant packaging for modern product presentation.",
+    title: "React Portfolio",
+    description: "Personal portfolio built using React and Tailwind CSS with smooth animations.",
     image: Project2,
     link: "https://portfolio-theta-seven-23.vercel.app/",
   },
   {
     id: 3,
-    title: "Sticker Roll",
-    description: "High-quality custom printed sticker rolls.",
+    title: "Nykaa Clone",
+    description: "E-commerce website inspired by Nykaa, built using React and Tailwind CSS.",
     image: Project3,
     link: "https://nykaa-clone-inky.vercel.app/",
   },
   {
     id: 4,
-    title: "CD Artwork",
-    description: "Creative CD packaging and label design.",
+    title: "Gym Website",
+    description: "Static gym website created using HTML, CSS, and JavaScript.",
     image: Project4,
     link: "https://project-1-three-nu.vercel.app/",
   },
   {
     id: 5,
-    title: "Typewriter Sheet",
-    description: "Vintage document layouts for creative print.",
+    title: "Food Delivery Website",
+    description: "Restaurant and food delivery website with modern layout and UI.",
     image: Project5,
     link: "https://my-website-ashen-sigma-45.vercel.app/",
   },
   {
     id: 6,
-    title: "Luxury Bag",
-    description: "Premium shopping bag design for brands.",
+    title: "Figma to React Website",
+    description: "Converted Figma design into a fully responsive React.js website.",
     image: Project6,
     link: "https://nilah.vercel.app/",
   },
 ];
+
 
 const Projects = () => {
   return (

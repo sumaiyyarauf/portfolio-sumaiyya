@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -68,32 +68,39 @@ const Footer = () => {
 
               <div className="flex space-x-4 mt-6">
                 <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-primary-400 transition-colors"
-                  aria-label="GitHub"
-                >
-                  <Github size={20} />
-                </a>
+                   href="https://github.com/sumaiyyarauf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub"
+                   className="text-gray-400 hover:text-white transition">
+                   <Github size={24} />
+                 </a>
                 <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-primary-400 transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin size={20} />
-                </a>
+                   href="https://www.linkedin.com/in/sumaiyya-abdul-rauf/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn"
+                   className="text-gray-400 hover:text-white transition"
+                   >
+                   <Linkedin size={24} />
+                 </a>
                 <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-dark-300 hover:text-primary-400 transition-colors"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={20} />
-                </a>
+                   href="https://vercel.com"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Vercel"
+                   className="text-gray-400 hover:text-white transition"
+                   >
+                <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   width="24"
+                   height="24"
+                   viewBox="0 0 256 256"
+                   fill="currentColor"
+                    >
+                    <path d="M128 32L256 224H0L128 32z" />
+                </svg>
+              </a>
               </div>
             </div>
           </div>
