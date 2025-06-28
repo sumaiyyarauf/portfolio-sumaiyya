@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from './Context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -7,6 +7,7 @@ import Qualifications from './components/Qualifications';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+// import Tunnel from './components/Tunnel';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Navbar />
         <main>
           <Hero />
+          {/* <Tunnel/> */}
           <About />
           <Qualifications />
           <Projects />

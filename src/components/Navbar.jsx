@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { Menu, X, Moon, Sun } from 'lucide-react';
-import { ThemeContext } from '../Context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const navLinks = [
