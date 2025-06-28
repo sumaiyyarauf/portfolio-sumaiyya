@@ -40,7 +40,7 @@ const About = () => {
       </div>
 
       <div className="text-center max-w-3xl mx-auto">
-        <h2 className={`text-5xl font-extrabold mb-6 tracking-tight ${
+        <h2 className={`text-4xl font-extrabold mb-6 tracking-tight ${
           darkMode ? 'text-[#F4EBD0]' : 'black'
         }`}>
           INTRODUCTION

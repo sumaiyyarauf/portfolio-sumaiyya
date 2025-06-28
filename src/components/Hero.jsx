@@ -43,7 +43,7 @@ const Hero = () => {
         PORTFOLIO
       </h1>
 
-      <div className="w-full z-10">
+      <div className="w-full z-10 ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -58,7 +58,7 @@ const Hero = () => {
 
            
 
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
+            <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-3">
               <a
                 href="#contact"
                 className="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-md font-semibold hover:opacity-80 transition"
